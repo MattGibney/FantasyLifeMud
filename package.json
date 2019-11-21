@@ -1,0 +1,27 @@
+{
+  "name": "@nodeten/fantasylife",
+  "version": "0.1.0",
+  "description": "MUD Game inspired by Fantasy Life",
+  "main": "app.js",
+  "scripts": {
+    "start": "node src/app.js",
+    "dev": "nodemon src/app.js",
+    "test": "nyc --reporter=lcov mocha -R spec --recursive",
+    "watch:test": "nodemon --exec npm test"
+  },
+  "keywords": [],
+  "author": "Matt Gibney",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^3.0.0",
+    "winston": "^3.2.1"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "eslint": "^6.6.0",
+    "mocha": "^6.1.4",
+    "nodemon": "^1.19.1",
+    "nyc": "^14.1.1",
+    "sinon": "^7.3.2"
+  }
+}
